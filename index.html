@@ -5,7 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta property="og:title" content="Sabitha & Balakrithik · Engagement Invitation">
 <meta property="og:description" content="Friday, 20 November 2026 · 9 AM · Sri Pudhuvengarai Kaali Amman Kovil, Paramathi Velur">
-<meta property="og:image" content="/assets/monogram.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sabitha-balakrithik-invitation.vercel.app/">
+<meta property="og:site_name" content="Sabitha &amp; Balakrithik">
+<meta property="og:image" content="https://sabitha-balakrithik-invitation.vercel.app/assets/og-image.jpg">
+<meta property="og:image:secure_url" content="https://sabitha-balakrithik-invitation.vercel.app/assets/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="600">
+<meta property="og:image:alt" content="SB monogram">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://sabitha-balakrithik-invitation.vercel.app/assets/og-image.jpg">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Sabitha & Balakrithik Engagement</title>
 <link rel="icon" href="assets/favicon.ico" sizes="any">
@@ -334,6 +344,32 @@ html.gated,html.gated body{overflow:hidden}
 .sib em{font-family:var(--f-display);font-style:italic;color:#8a5a2b}
 @media (max-width:759.98px){ .s .sib{font-size:clamp(10.5px,3vw,12.5px);margin-top:-9px} }
 
+/* ===== Tap hint on the opening screen ===== */
+.open-wrap{position:relative;display:inline-block}
+.gate .tap{position:absolute;right:-9%;bottom:-78%;width:min(6.5cqw,11vw);height:min(6.5cqw,11vw);color:#5e0b07;
+  filter:drop-shadow(0 2px 3px rgba(255,240,200,.9));pointer-events:none;transform:rotate(-18deg)}
+.gate .tap svg{width:100%;height:100%;display:block}
+.gate .tap-txt{font:500 min(1.25cqw,2.6vw)/1 var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:#7a4a2a;margin-top:min(1.4cqw,2.6vw)}
+@media (prefers-reduced-motion:no-preference){
+  .gate .tap{animation:tapbob 1.1s ease-in-out infinite}
+  @keyframes tapbob{0%,100%{transform:rotate(-18deg) translate(0,0)}50%{transform:rotate(-18deg) translate(-12%,-22%) scale(.92)}}
+}
+
+/* ===== Scroll hint over the gopuram (page 1): two white chevrons ===== */
+.scroll-hint{position:fixed;z-index:30;left:50%;bottom:calc(9vh + env(safe-area-inset-bottom,0px));transform:translateX(-50%);
+  width:52px;height:56px;color:#fffdf7;pointer-events:none;transition:opacity .45s ease;
+  filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.35))}
+.scroll-hint .chev{position:absolute;left:0;width:52px;height:28px}
+.scroll-hint .c1{top:0}
+.scroll-hint .c2{top:20px}
+.scroll-hint.off{opacity:0}
+@media (min-width:760px){ .scroll-hint{bottom:calc(26px + env(safe-area-inset-bottom,0px))} }
+@media (prefers-reduced-motion:no-preference){
+  .scroll-hint .chev{animation:chevfall 1.5s ease-in-out infinite}
+  .scroll-hint .c2{animation-delay:.18s}
+  @keyframes chevfall{0%{opacity:0;transform:translateY(-10px)}35%{opacity:1;transform:translateY(0)}75%{opacity:0;transform:translateY(12px)}100%{opacity:0;transform:translateY(12px)}}
+}
+
 /* ===== Motion ===== */
 .gopuram,.trees{will-change:transform}
 /* pinned hero text sits above the scrolling scene */
@@ -403,7 +439,7 @@ html.gated,html.gated body{overflow:hidden}
     <p class="t amp2" style="--y:1935;--cx:1006.8;--fs:170;--min:44px" aria-label="and"><i>&amp;</i></p>
     <p class="t gold" style="--y:2117;--cx:1007;--fs:190;--min:58px">Balakrithik</p>
     <p class="t fam" style="--y:2329;--cx:1006.5;--fs:34;--min:12px"><em>Beloved son of</em> <span>Mrs. Geetha &amp; Mr. Gobalakrishnan</span></p>
-    <p class="t sib" style="--y:2383;--cx:1006.5;--fs:30;--min:11px"><em>Brother of</em> G Jai Atchudhan</p>
+    <p class="t sib" style="--y:2383;--cx:1006.5;--fs:30;--min:11px"><em>Brother of</em> G Jai Atchuthan</p>
 
     <div class="date">
       <p class="t dt m1" style="--y:2611;--cx:975;--fs:64;--min:20px">November</p>
@@ -459,7 +495,7 @@ html.gated,html.gated body{overflow:hidden}
     <p class="t note" style="--fs:38;--min:15px">The morning is brighter with you</p>
     <p class="t joy" style="--fs:88;--min:30px">Your presence will<br>make our joy complete.</p>
     <a class="t maps" style="--fs:34;--min:16px"
-       href="https://www.google.com/maps/search/?api=1&amp;query=Sri+Pudhuvengarai+Kaali+Amman+Kovil%2C+Kollakattupudhur%2C+Paramathi+Velur%2C+Namakkal"
+       href="https://maps.app.goo.gl/evEdRWFGPncaKXLo9"
        target="_blank" rel="noopener">Open venue in Google Maps
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
     </a>
@@ -480,9 +516,14 @@ html.gated,html.gated body{overflow:hidden}
       <p class="omtx">Om Shri Ganeshaya Namaha</p>
       <p class="who"><span>Sabitha</span> <em>&amp;</em> <span>Balakrithik</span></p>
       <p class="when">Engagement · 20 November 2026</p>
-      <button class="open" id="open-invite" type="button">Open Invitation</button>
+      <span class="open-wrap"><button class="open" id="open-invite" type="button">Open Invitation</button><span class="tap" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 11.24V7.5C9 6.12 10.12 5 11.5 5S14 6.12 14 7.5v3.74c1.21-.81 2-2.18 2-3.74C16 5.01 13.99 3 11.5 3S7 5.01 7 7.5c0 1.56.79 2.93 2 3.74zm9.84 4.63-4.54-2.26c-.17-.07-.35-.11-.54-.11H13v-6c0-.83-.67-1.5-1.5-1.5S10 6.67 10 7.5v10.74l-3.43-.72c-.08-.01-.15-.03-.24-.03-.31 0-.59.13-.79.33l-.79.8 4.94 4.94c.27.27.65.44 1.06.44h6.79c.75 0 1.33-.55 1.44-1.28l.75-5.27c.01-.07.02-.14.02-.2 0-.62-.38-1.16-.91-1.38z"/></svg></span></span>
+      <p class="tap-txt">Tap to open</p>
     </div>
   </div>
+</div>
+<div class="scroll-hint" id="scroll-hint" aria-hidden="true" hidden>
+  <svg class="chev c1" viewBox="0 0 48 26" fill="none"><path d="M6 5 24 20 42 5" stroke="currentColor" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <svg class="chev c2" viewBox="0 0 48 26" fill="none"><path d="M6 5 24 20 42 5" stroke="currentColor" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </div>
 <button class="mute" id="mute" type="button" aria-label="Mute music" aria-pressed="false" hidden>
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -579,6 +620,7 @@ html.gated,html.gated body{overflow:hidden}
     if(opened) return; opened=true;
     play();                                  // the tap itself unlocks sound
     var m=document.getElementById("mute"); if(m) m.hidden=false;
+    showHint();
     gate.classList.add("gone");
     document.documentElement.classList.remove("gated");
     document.dispatchEvent(new Event("invite-open"));
@@ -601,6 +643,16 @@ html.gated,html.gated body{overflow:hidden}
     m.setAttribute("aria-pressed",muted); m.setAttribute("aria-label",muted?"Unmute music":"Mute music");
   });
 })();
+
+// ---------- Scroll hint (page 1): hides while scrolled, returns at the top ----------
+var hintEl=document.getElementById("scroll-hint"), hintOn=false;
+function syncHint(){ if(hintEl) hintEl.classList.toggle("off", window.scrollY>40); }
+function showHint(){
+  if(!hintEl||hintOn) return; hintOn=true;
+  hintEl.hidden=false; syncHint();
+  window.addEventListener("scroll",syncHint,{passive:true});
+}
+if(!document.getElementById("gate")) showHint();
 </script>
 
 </body>
